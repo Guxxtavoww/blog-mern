@@ -1,3 +1,5 @@
 import axios from "axios";
 
-export default axios.create({ baseURL: "https://blog-mern-server-api.herokuapp.com/server" });  
+const baseURL = process.env.REACT_APP_API_URL;
+
+export default axios.create({ baseURL });  
